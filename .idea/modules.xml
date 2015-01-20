@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Dosenschuttler.iml" filepath="$PROJECT_DIR$/Dosenschuttler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dosenschuttler_4.4/dosenschuttler_4.4.iml" filepath="$PROJECT_DIR$/dosenschuttler_4.4/dosenschuttler_4.4.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/wear/wear.iml" filepath="$PROJECT_DIR$/wear/wear.iml" />
     </modules>
