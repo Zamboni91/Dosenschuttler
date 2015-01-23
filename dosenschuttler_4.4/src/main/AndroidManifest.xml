@@ -7,8 +7,13 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!--
+        Zamboni, 23.01.2015
+        added screen Orientation lock on portrait
+        -->
         <activity
             android:name=".Counter"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
