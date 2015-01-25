@@ -1,10 +1,5 @@
 package com.example.marc.dosenschuttler_44;
 
-import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,19 +7,12 @@ import android.view.MenuItem;
 
 
 
-public class Counter extends ActionBarActivity implements SensorEventListener {
-
-    private SensorManager senSensorManager;
-    private Sensor senAccelerometer;
+public class Counter extends ActionBarActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
-
-        senSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        senAccelerometer = senSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
     }
 
 
@@ -48,25 +36,5 @@ public class Counter extends ActionBarActivity implements SensorEventListener {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-
-    }
-
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
-
-    protected void onPause() {
-        super.onPause();
-        senSensorManager.unregisterListener(this);
-    }
-
-    protected void onResume() {
-        super.onResume();
-        senSensorManager.registerListener(this, senAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
     }
 }
