@@ -4,10 +4,13 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.example.marc.dosenschuttler_44.moveMe.moveCounter;
 
 
 public class Counter extends ActionBarActivity{
+    private moveCounter myCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +39,11 @@ public class Counter extends ActionBarActivity{
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void StartTest(View v){
+        myCount = new moveCounter(this);
+
+
     }
 }

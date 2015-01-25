@@ -62,6 +62,7 @@ public class moveCounter extends ActionBarActivity implements SensorEventListene
 
                 if (speed > SHAKE_THRESHOLD) {
                     this.count++;
+
                 }
 
                 last_x = x;
@@ -69,6 +70,8 @@ public class moveCounter extends ActionBarActivity implements SensorEventListene
                 last_z = z;
             }
         }
+
+
     }
 
     @Override
